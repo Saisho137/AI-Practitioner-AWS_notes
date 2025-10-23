@@ -26,9 +26,11 @@ La certificación AWS AI Practitioner está compuesta por 5 dominios con diferen
 2. Identificar casos prácticos de uso para IA
 3. Describir el ciclo de vida de desarrollo de ML
 
-#### Dominio 2: Fundamentos de IA Generativa (24%)
+#### [Dominio 2: Fundamentos de IA Generativa](Dominio_2.md) (24%)
 
-> *Próximamente*
+1. Conceptos básicos de la IA generativa
+2. Capacidades y limitaciones de la IA generativa para resolver problemas comerciales
+3. Infraestructura y tecnologías de AWS para crear aplicaciones generativas de IA
 
 #### Dominio 3: Aplicaciones de los Foundation Models (28%)
 

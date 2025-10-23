@@ -1,5 +1,7 @@
 # Dominio 1: Fundamentos de IA y ML
 
+---
+
 ## 1. Conceptos básicos y terminología
 
 ![Diagrama de relación entre IA, ML, DL y GenAI](dominio_1_images/image.png)
