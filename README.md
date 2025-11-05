@@ -2,6 +2,12 @@
 
 Este repositorio contiene mis notas personales de estudio para la certificación **AWS AI Practitioner**. El material está organizado por dominios siguiendo la estructura del examen oficial.
 
+![Estructura de dominios de la certificación AWS AI Practitioner](image.png)
+
+## 📋 Recursos Oficiales
+
+- **[Guía Oficial del Examen AWS AI Practitioner](PDFs/AWS-Certified-AI-Practitioner_Exam-Guide.pdf)**: Documento oficial de AWS con el contenido y estructura del examen.
+
 ## 📚 Estructura del Examen
 
 La certificación AWS AI Practitioner está compuesta por 5 dominios con diferentes pesos:
@@ -24,11 +30,15 @@ La certificación AWS AI Practitioner está compuesta por 5 dominios con diferen
 2. Identificar casos prácticos de uso para IA
 3. Describir el ciclo de vida de desarrollo de ML
 
+**📄 Material complementario**: [Sesión 1 - Dominio 1.pdf](PDFs/Sesión%201%20-%20Dominio%201.pdf)
+
 #### [Dominio 2: Fundamentos de IA Generativa](Dominio_2.md) (24%)
 
 1. Conceptos básicos de la IA generativa
 2. Capacidades y limitaciones de la IA generativa para resolver problemas comerciales
 3. Infraestructura y tecnologías de AWS para crear aplicaciones generativas de IA
+
+**📄 Material complementario**: [Sesión 2 - Dominio 2.pdf](PDFs/Sesión%202%20-%20Dominio%202.pdf)
 
 #### [Dominio 3: Aplicaciones de Foundation Models](Dominio_3.md) (28%)
 
@@ -37,6 +47,8 @@ La certificación AWS AI Practitioner está compuesta por 5 dominios con diferen
 3. Proceso de entrenamiento y afinamiento de Foundation Models
 4. Métodos para evaluar el desempeño de Foundation Models
 
+**📄 Material complementario**: [Sesión 3 - Dominio 3.pdf](PDFs/Sesión%203%20-%20Dominio%203.pdf)
+
 #### Dominio 4: Directrices para la IA Responsable (14%)
 
 > *Próximamente*
@@ -44,6 +56,8 @@ La certificación AWS AI Practitioner está compuesta por 5 dominios con diferen
 #### Dominio 5: Seguridad, Cumplimiento y Gobernanza para Soluciones de IA (14%)
 
 > *Próximamente*
+
+**📄 Material complementario**: [Sesión 4 - Dominios 4 & 5.pdf](PDFs/Sesión%204%20-%20Dominio%204%20&%205.pdf)
 
 ## 📝 Notas
 
