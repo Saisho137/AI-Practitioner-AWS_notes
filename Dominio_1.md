@@ -92,29 +92,33 @@ Se extraen etiquetas sintéticas del propio dato. El modelo se entrena con tarea
 
 ### Servicios de AWS
 
-- **Visión**: clasificación, detección, análisis de imágenes → `Amazon Rekognition`
+**Servicios principales de IA/ML en AWS**:
+
+- **Visión**: Clasificación, detección, análisis de imágenes → `Amazon Rekognition`
 - **Extracción de texto de documentos**: OCR y campos estructurados → `Amazon Textract`
-- **NLP y análisis de texto**: extracción de entidades, sentimiento, clasificación → `Amazon Comprehend`
-- **Búsqueda semántica / recuperación**: buscadores con embeddings → `Amazon Kendra`
-- **Personalización y recomendaciones**: sistemas de recomendación → `Amazon Personalize`
-- **Detección de fraude**: reglas + modelos ML especializados → `Amazon Fraud Detector`
-- **Plataforma de ciclo ML**: entrenamiento, despliegue, monitorización → `Amazon SageMaker`
+- **NLP y análisis de texto**: Extracción de entidades, sentimiento, clasificación → `Amazon Comprehend`
+- **Búsqueda semántica / recuperación**: Buscadores con embeddings → `Amazon Kendra`
+- **Personalización y recomendaciones**: Sistemas de recomendación → `Amazon Personalize`
+- **Detección de fraude**: Reglas + modelos ML especializados → `Amazon Fraud Detector`
+- **Plataforma de ciclo ML**: Entrenamiento, despliegue, monitorización → `Amazon SageMaker`
 
 ---
 
-## 3. Proceso / ciclo de vida de ML
+## 3. Ciclo de vida del desarrollo de ML
 
 ![Ciclo de vida de Machine Learning](dominio_1_images/image-5.png)
 
-1. **Definir problema**: métrica objetivo, restricciones, impacto.
-2. **Recolección de datos**: fuentes, permisos, calidad.
-3. **Exploración y limpieza**: outliers, nulos, balance de clases.
-4. **Ingeniería de features**: transformar, crear, normalizar.
-5. **Selección / entrenamiento de modelo**: baseline → iteración.
-6. **Evaluación**: train/val/test, métricas (accuracy, F1, AUC, RMSE según caso).
-7. **Despliegue**: contenedor, endpoint, versiones.
-8. **Monitorización**: deriva de datos, rendimiento, latencia, drift y alertas.
-9. **Mantenimiento**: re-entrenamiento, pipelines automatizados.
+### Fases del ciclo de vida de ML
+
+1. **Definir problema**: Métrica objetivo, restricciones, impacto.
+2. **Recolección de datos**: Fuentes, permisos, calidad.
+3. **Exploración y limpieza**: Outliers, nulos, balance de clases.
+4. **Ingeniería de features**: Transformar, crear, normalizar.
+5. **Selección / entrenamiento de modelo**: Baseline → iteración.
+6. **Evaluación**: Train/val/test, métricas (accuracy, F1, AUC, RMSE según caso).
+7. **Despliegue**: Contenedor, endpoint, versiones.
+8. **Monitorización**: Deriva de datos, rendimiento, latencia, drift y alertas.
+9. **Mantenimiento**: Re-entrenamiento, pipelines automatizados.
 
 ### Amazon AI/ML Stack
 
@@ -123,6 +127,14 @@ Se extraen etiquetas sintéticas del propio dato. El modelo se entrena con tarea
 ### Amazon SageMaker
 
 Plataforma completa para el ciclo de vida de ML: entrenamiento, despliegue y monitorización de modelos.
+
+**Capacidades principales**:
+
+- Preparación de datos y feature engineering.
+- Entrenamiento distribuido de modelos.
+- Ajuste de hiperparámetros automatizado.
+- Despliegue de modelos en producción.
+- Monitoreo y detección de deriva de datos.
 
 ![Características de Amazon SageMaker](dominio_1_images/image-7.png)
 
@@ -138,11 +150,16 @@ Automatiza el análisis de imágenes y videos con aprendizaje automático.
 
 **Características clave**:
 
-| Etiquetas                      | Etiquetas personalizadas           |
-| ------------------------------ | ---------------------------------- |
-| Moderación de contenido        | Detección de texto                 |
-| Detección facial               | Búsqueda y verificación de rostros |
-| Reconocimiento de celebridades | Pathing                            |
+| Funcionalidad | Descripción |
+|---------------|-------------|
+| **Etiquetas** | Detección automática de objetos, escenas y actividades |
+| **Etiquetas personalizadas** | Entrenamiento con datos propios para detectar objetos específicos |
+| **Moderación de contenido** | Filtrado de contenido inapropiado o no seguro |
+| **Detección de texto** | OCR en imágenes y videos |
+| **Detección facial** | Identificación de rostros y sus atributos |
+| **Búsqueda y verificación de rostros** | Comparación y búsqueda de rostros en colecciones |
+| **Reconocimiento de celebridades** | Identificación automática de figuras públicas |
+| **Pathing** | Seguimiento de movimiento de personas en videos |
 
 ### Amazon Textract
 
@@ -157,9 +174,9 @@ Extrae texto y datos de cualquier documento usando ML sin trabajo manual.
 **Beneficios**:
 
 - Extrae datos estructurados y no estructurados.
-- Va más allá del OCR simple.
-- Soporta seguridad y cumplimiento.
-- Permite implementar revisiones humanas.
+- Va más allá del OCR simple (identifica tablas, formularios, campos clave-valor).
+- Soporta seguridad y cumplimiento normativo.
+- Permite implementar revisiones humanas con Amazon Augmented AI (A2I).
 
 ### Amazon Comprehend
 
@@ -182,8 +199,6 @@ Descubre ideas y relaciones dentro del texto.
 
 Servicio de búsqueda empresarial basado en ML.
 
-**Clientes destacados**: CORD-19 (conjunto de datos de investigación COVID-19)
-
 **Casos de uso**:
 
 - Mejorar acceso al conocimiento interno.
@@ -193,8 +208,11 @@ Servicio de búsqueda empresarial basado en ML.
 **Beneficios**:
 
 - Consultas en lenguaje natural y respuestas inmediatas.
-- Reúne datos con pocos clics.
-- Mejora continuamente los resultados de búsqueda.
+- Integración con múltiples fuentes de datos con pocos clics.
+- Mejora continuamente los resultados de búsqueda con ML.
+- Entiende el contexto y la intención del usuario.
+
+> **Nota**: CORD-19 (conjunto de datos de investigación COVID-19) es un cliente destacado que utiliza Kendra.
 
 ### Amazon Personalize
 
@@ -232,16 +250,32 @@ Detecta fraudes en línea de forma rápida.
 
 ## Quiz
 
+### Pregunta 1: Tipo de aprendizaje supervisado
+
 ![Pregunta 1 del quiz - Tipo de aprendizaje supervisado](dominio_1_images/image-8.png)
 
-**Respuesta**: A - Supervisado.
+**Respuesta correcta**: **A** - Supervisado.
+
+**Explicación**: El aprendizaje supervisado utiliza datos etiquetados donde cada entrada tiene una salida conocida que el modelo aprende a predecir.
+
+---
+
+### Pregunta 2: Sistema de recomendaciones
 
 ![Pregunta 2 del quiz - Sistema de recomendaciones](dominio_1_images/image-9.png)
 
-**Respuesta**: B - Utilizar Amazon Personalize.
+**Respuesta correcta**: **B** - Utilizar Amazon Personalize.
+
+**Explicación**: Amazon Personalize está específicamente diseñado para crear sistemas de recomendación personalizados en tiempo real.
+
+---
+
+### Pregunta 3: Plataforma de ML
 
 ![Pregunta 3 del quiz - Plataforma de ML](dominio_1_images/image-10.png)
 
-**Respuesta**: D - SageMaker.
+**Respuesta correcta**: **D** - SageMaker.
+
+**Explicación**: Amazon SageMaker es la plataforma completa de AWS para el ciclo de vida de ML, desde la preparación de datos hasta el despliegue y monitoreo.
 
 ---
