@@ -52,4 +52,4 @@ Este material está en constante actualización conforme avanzo en mi preparaci�
 ---
 
 **Autor**: Santiago Betancur  
-**Última actualización**: Octubre 2025
+**Última actualización**: 4 de Noviembre, 2025
