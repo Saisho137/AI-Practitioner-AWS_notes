@@ -2,8 +2,6 @@
 
 Este repositorio contiene mis notas personales de estudio para la certificación **AWS AI Practitioner**. El material está organizado por dominios siguiendo la estructura del examen oficial.
 
-![Estructura de dominios de la certificación AWS AI Practitioner](image.png)
-
 ## 📚 Estructura del Examen
 
 La certificación AWS AI Practitioner está compuesta por 5 dominios con diferentes pesos:
@@ -32,9 +30,12 @@ La certificación AWS AI Practitioner está compuesta por 5 dominios con diferen
 2. Capacidades y limitaciones de la IA generativa para resolver problemas comerciales
 3. Infraestructura y tecnologías de AWS para crear aplicaciones generativas de IA
 
-#### Dominio 3: Aplicaciones de los Foundation Models (28%)
+#### [Dominio 3: Aplicaciones de Foundation Models](Dominio_3.md) (28%)
 
-> *Próximamente*
+1. Consideraciones de diseño para aplicaciones que utilizan Foundation Models
+2. Técnicas efectivas de ingeniería de prompts
+3. Proceso de entrenamiento y afinamiento de Foundation Models
+4. Métodos para evaluar el desempeño de Foundation Models
 
 #### Dominio 4: Directrices para la IA Responsable (14%)
 
