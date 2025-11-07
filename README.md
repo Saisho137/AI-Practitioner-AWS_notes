@@ -49,9 +49,12 @@ La certificación AWS AI Practitioner está compuesta por 5 dominios con diferen
 
 **📄 Material complementario**: [Sesión 3 - Dominio 3.pdf](PDFs/Sesión%203%20-%20Dominio%203.pdf)
 
-#### Dominio 4: Directrices para la IA Responsable (14%)
+#### [Dominio 4: Directrices para la IA Responsable](Dominio_4.md) (14%)
 
-> *Próximamente*
+1. Desarrollo de Sistemas de IA Responsable
+2. Importancia de los modelos transparentes y explicables
+
+**📄 Material complementario**: [Sesión 4 - Dominios 4 & 5.pdf](PDFs/Sesión%204%20-%20Dominio%204%20&%205.pdf)
 
 #### Dominio 5: Seguridad, Cumplimiento y Gobernanza para Soluciones de IA (14%)
 
@@ -66,4 +69,4 @@ Este material está en constante actualización conforme avanzo en mi preparaci�
 ---
 
 **Autor**: Santiago Betancur  
-**Última actualización**: 4 de Noviembre, 2025
+**Última actualización**: 6 de Noviembre, 2025
