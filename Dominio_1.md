@@ -279,3 +279,15 @@ Detecta fraudes en línea de forma rápida.
 **Explicación**: Amazon SageMaker es la plataforma completa de AWS para el ciclo de vida de ML, desde la preparación de datos hasta el despliegue y monitoreo.
 
 ---
+
+## Resumen del Dominio 1
+
+Este dominio establece los fundamentos esenciales de IA y Machine Learning:
+
+1. **Jerarquía de conceptos**: IA → ML → Deep Learning → Generative AI, cada nivel con mayor especialización
+2. **Tipos de aprendizaje**: Supervisado (con etiquetas), No supervisado (patrones), Refuerzo (recompensas) y Auto-supervisado (pre-entrenamiento de LLMs)
+3. **Servicios AWS especializados**: Rekognition (visión), Textract (documentos), Comprehend (NLP), Kendra (búsqueda), Personalize (recomendaciones), Fraud Detector
+4. **Ciclo de vida de ML**: Desde definición del problema hasta monitoreo continuo en producción
+5. **Amazon SageMaker**: Plataforma integral para todo el ciclo de vida de ML en AWS
+
+---

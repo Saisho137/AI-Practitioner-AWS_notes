@@ -283,3 +283,22 @@ Amazon Bedrock permite:
 
 - **(B)** Amazon Bedrock Knowledge Bases - Para implementar RAG con fuentes de datos empresariales.
 - **(C)** Amazon Bedrock Agents - Para crear agentes que ejecuten tareas complejas de forma autónoma.
+
+---
+
+## Resumen del Dominio 3
+
+Este dominio profundiza en las aplicaciones prácticas de Foundation Models:
+
+1. **RAG (Retrieval Augmented Generation)**: Marco para superar limitaciones de conocimiento usando bases de datos vectoriales (OpenSearch, Aurora con pgvector, Neptune)
+2. **Herramientas de Amazon Bedrock**:
+   - **Knowledge Bases**: Implementación de RAG con datos empresariales
+   - **Guardrails**: Políticas de seguridad y filtrado de contenido (detiene prompts maliciosos antes de llegar al modelo)
+   - **Agents**: Ejecución autónoma de tareas complejas con planificación y orquestación
+3. **Ingeniería de prompts**: Técnicas Zero-Shot (sin ejemplos), Few-Shot (con ejemplos) y Chain of Thought (razonamiento paso a paso)
+4. **Seguridad**: Protección contra Prompt Injection y Prompt Leak usando Guardrails
+5. **Personalización de FMs**: Ingeniería de prompts → RAG → Fine-tuning → Pre-entrenamiento continuo
+6. **Preparación de datos**: Curación, gobierno, etiquetado y RLHF (Reinforcement Learning from Human Feedback)
+7. **Evaluación de modelos**: Métricas clave - ROUGE (resumen), BLEU (traducción), BERTScore (similitud semántica), F1 Score (Q&A)
+
+---

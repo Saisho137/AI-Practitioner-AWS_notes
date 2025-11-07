@@ -341,6 +341,20 @@ Plataforma de experimentación con IA generativa sin necesidad de código.
 
 ---
 
+## Resumen del Dominio 2
+
+Este dominio cubre los fundamentos esenciales de la IA Generativa:
+
+1. **Foundation Models (FMs)**: Modelos pre-entrenados a gran escala (LLMs, texto-imagen, multimodales) basados en arquitectura Transformer
+2. **Mecanismo Transformer**: Procesamiento paralelo con mecanismo de atención, usa tokenización y embeddings para comprender contexto
+3. **Parámetros de inferencia**: Control de creatividad (temperatura), filtrado de tokens (top-k, top-p), longitud y penalizaciones
+4. **Ventana de contexto**: El modelo procesa toda la conversación en cada mensaje, lo que afecta calidad, tiempo y costo
+5. **Servicios AWS**: Amazon Bedrock (FMs como servicio), SageMaker AI (plataforma ML completa), Amazon Q (asistente IA), PartyRock (prototipado)
+6. **Personalización de FMs**: Fine-tuning (tarea específica) vs Pre-entrenamiento continuo (dominio específico)
+7. **Desafíos**: Alucinaciones, sesgos, toxicidad, privacidad, propiedad intelectual
+
+---
+
 ## Infografía útil
 
 ![Cómo los LLMs ven el mundo](dominio_2_images/llm-vision.gif)
