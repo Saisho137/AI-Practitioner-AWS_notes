@@ -56,15 +56,12 @@ La certificación AWS AI Practitioner está compuesta por 5 dominios con diferen
 
 **📄 Material complementario**: [Sesión 4 - Dominios 4 & 5.pdf](PDFs/Sesión%204%20-%20Dominio%204%20&%205.pdf)
 
-#### Dominio 5: Seguridad, Cumplimiento y Gobernanza para Soluciones de IA (14%)
+#### [Dominio 5: Seguridad, Cumplimiento y Gobernanza para Soluciones de IA](Dominio_5.md) (14%)
 
-> *Próximamente*
+1. Métodos para proteger los sistemas de IA
+2. Regulaciones de gobernanza y cumplimiento para los sistemas de IA
 
 **📄 Material complementario**: [Sesión 4 - Dominios 4 & 5.pdf](PDFs/Sesión%204%20-%20Dominio%204%20&%205.pdf)
-
-## 📝 Notas
-
-Este material está en constante actualización conforme avanzo en mi preparación para la certificación.
 
 ---
 
