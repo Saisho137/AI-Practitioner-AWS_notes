@@ -1,9 +1,10 @@
 # AWS AI Practitioner - Notas de Estudio
 
-Este repositorio contiene mis notas personales de estudio para la certificación **AWS AI Practitioner**, organizado en dos secciones principales:
+Este repositorio contiene mis notas personales de estudio para la certificación **AWS AI Practitioner**, organizado en tres secciones principales:
 
 1. **[Readiness Path](#-readiness-path)**: Notas completas de los 5 dominios del examen oficial
 2. **[SkillBuilder](#-skillbuilder)**: Temas específicos y profundización en conceptos clave
+3. **[Extra](#-extra)**: Notas adicionales sobre servicios AWS, algoritmos y métricas
 
 ![Estructura de dominios de la certificación AWS AI Practitioner](image.png)
 
@@ -80,9 +81,24 @@ La certificación AWS AI Practitioner está compuesta por 5 dominios con diferen
 
 Notas profundas sobre temas específicos de AWS SkillBuilder y recursos adicionales.
 
-**[Ver contenido de SkillBuilder →](SkillBuilder/)**
+**[Ver contenido de SkillBuilder →](SkillBuilder/README.md)**
 
-Esta sección incluye guías detalladas sobre temas específicos
+---
+
+## 📦 Extra
+
+Notas complementarias sobre temas no cubiertos en los dominios principales.
+
+**[Ver Notas Adicionales →](Extra/Notas_Adicionales.md)**
+
+| Tema | Contenido |
+|------|----------|
+| **SageMaker** | Data Wrangler, Pipelines, Model Cards, Model Registry |
+| **Métricas ML** | MAE, MAPE, RMSE, Precision, Recall, AUC-ROC |
+| **Amazon Q Business** | Capacidades empresariales, RAG integrado, QuickSight |
+| **Algoritmos ML** | Clustering, Anomaly Detection, Forecasting, Classification |
+| **Networking** | Gateway Endpoints vs Interface Endpoints |
+| **Conceptos técnicos** | Embeddings, Tokenización, Bases de datos vectoriales, Bedrock Agents |
 
 ---
 
@@ -93,4 +109,4 @@ Este material está en constante actualización conforme avanzo en mi preparaci�
 ---
 
 **Autor**: Santiago Betancur  
-**Última actualización**: 25 de Noviembre, 2025
+**Última actualización**: 8 de Diciembre, 2025
