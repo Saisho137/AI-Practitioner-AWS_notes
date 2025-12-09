@@ -110,15 +110,15 @@ Se extraen etiquetas sintéticas del propio dato. El modelo se entrena con tarea
 
 ### Fases del ciclo de vida de ML
 
-1. **Definir problema**: Métrica objetivo, restricciones, impacto.
-2. **Recolección de datos**: Fuentes, permisos, calidad.
-3. **Exploración y limpieza**: Outliers, nulos, balance de clases.
-4. **Ingeniería de features**: Transformar, crear, normalizar.
-5. **Selección / entrenamiento de modelo**: Baseline → iteración.
-6. **Evaluación**: Train/val/test, métricas (accuracy, F1, AUC, RMSE según caso).
-7. **Despliegue**: Contenedor, endpoint, versiones.
-8. **Monitorización**: Deriva de datos, rendimiento, latencia, drift y alertas.
-9. **Mantenimiento**: Re-entrenamiento, pipelines automatizados.
+1. **Definir problema** *(Problem Definition)*: Métrica objetivo, restricciones, impacto.
+2. **Recolección de datos** *(Data Collection)*: Fuentes, permisos, calidad.
+3. **Exploración y limpieza** *(Data Preprocessing / Data Cleaning)*: Outliers, nulos, balance de clases.
+4. **Ingeniería de features** *(Feature Engineering)*: Transformar, crear, normalizar.
+5. **Selección / entrenamiento de modelo** *(Model Training / Model Selection)*: Baseline → iteración.
+6. **Evaluación** *(Model Evaluation)*: Train/val/test, métricas (accuracy, F1, AUC, RMSE según caso).
+7. **Despliegue** *(Model Deployment)*: Contenedor, endpoint, versiones.
+8. **Monitorización** *(Model Monitoring)*: Deriva de datos, rendimiento, latencia, drift y alertas.
+9. **Mantenimiento** *(Model Maintenance / Retraining)*: Re-entrenamiento, pipelines automatizados.
 
 ### Amazon AI/ML Stack
 

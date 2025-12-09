@@ -7,44 +7,46 @@
 > - ✅ = Cubierto en las notas
 >
 > 📅 **Última revisión:** 8 de diciembre de 2025
+>
+> 📂 **Notas adicionales:** [Extra/Notas_Adicionales.md](Extra/Notas_Adicionales.md)
 
 ---
 
-## Amazon SageMaker ⚠️
+## Amazon SageMaker ✅
 
-> ⚠️ Algunos servicios están cubiertos en ReadinessPath, pero faltan detalles específicos.
+> ✅ Cubierto en ReadinessPath y [Extra/Notas_Adicionales.md](Extra/Notas_Adicionales.md)
 
 - ✅ **Model Monitor** - Cubierto en [Dominio_4.md](ReadinessPath/Dominio_4.md) (monitoreo, detección de drift/desviaciones)
-- ❌ **Data Wrangler** - Preparación y transformación de datos
-- ❌ **Pipelines** - Framework para orquestar el flujo de desarrollo de modelos ML
+- ✅ **Data Wrangler** - Cubierto en [Notas_Adicionales.md](Extra/Notas_Adicionales.md)
+- ✅ **Pipelines** - Cubierto en [Notas_Adicionales.md](Extra/Notas_Adicionales.md)
 - ✅ **Clarify** - Cubierto en [Dominio_4.md](ReadinessPath/Dominio_4.md) (Bias, Transparency, explicabilidad)
-- ❌ **Model Cards** - Documentación de modelos
-- ❌ **Service Cards** - Documentación de servicios
+- ✅ **Model Cards** - Cubierto en [Notas_Adicionales.md](Extra/Notas_Adicionales.md)
+- ⚠️ **Service Cards** - Concepto similar a Model Cards (documentación de servicios AWS de IA)
 - ✅ **Ground Truth** - RLHF cubierto en [Dominio_1.md](ReadinessPath/Dominio_1.md) y [Dominio_3.md](ReadinessPath/Dominio_3.md)
-- ❌ **Model Registry** - Registro y versionado de modelos
+- ✅ **Model Registry** - Cubierto en [Notas_Adicionales.md](Extra/Notas_Adicionales.md)
 - ✅ **JumpStart** - Cubierto en [Dominio_2.md](ReadinessPath/Dominio_2.md) (acceso a FMs pre-entrenados)
 - ✅ **Model Dashboard** - Cubierto en [Dominio_4.md](ReadinessPath/Dominio_4.md) (visualización centralizada)
 
 ---
 
-## Métricas de Evaluación de Modelos ⚠️
+## Métricas de Evaluación de Modelos ✅
 
-> ⚠️ Métricas para FMs están cubiertas, pero faltan métricas de ML tradicional.
+> ✅ Cubierto completamente entre ReadinessPath y [Extra/Notas_Adicionales.md](Extra/Notas_Adicionales.md)
 
-### ✅ Cubiertas en [Dominio_3.md](ReadinessPath/Dominio_3.md)
+### Métricas para Foundation Models - [Dominio_3.md](ReadinessPath/Dominio_3.md)
 
-- **ROUGE** - Resumen de texto (superposición de n-gramas)
-- **BLEU** - Traducción automática
-- **BERTScore** - Similitud semántica
-- **F1 Score** - Q&A y clasificación
+- ✅ **ROUGE** - Resumen de texto (superposición de n-gramas)
+- ✅ **BLEU** - Traducción automática
+- ✅ **BERTScore** - Similitud semántica
+- ✅ **F1 Score** - Q&A y clasificación
 
-### ❌ Sin cubrir (ML tradicional)
+### Métricas ML tradicional - [Notas_Adicionales.md](Extra/Notas_Adicionales.md)
 
-- **MAPE** (Mean Absolute Percentage Error) - Regresión
-- **MAE** (Mean Absolute Error) - Regresión
-- **RMSE** (Root Mean Square Error) - Solo mención en Dominio_1
-- **AUC-ROC** - Clasificación binaria
-- **Precision/Recall** - Clasificación
+- ✅ **MAPE** (Mean Absolute Percentage Error) - Regresión
+- ✅ **MAE** (Mean Absolute Error) - Regresión
+- ✅ **RMSE** (Root Mean Square Error) - Regresión
+- ✅ **AUC-ROC** - Clasificación binaria
+- ✅ **Precision/Recall** - Clasificación
 
 ---
 
@@ -96,12 +98,13 @@
 
 ---
 
-## Generative AI Security Scoping Matrix ⚠️
+## Generative AI Security Scoping Matrix ✅
 
-> ⚠️ Mencionado brevemente en [Dominio_5.md](ReadinessPath/Dominio_5.md), pero sin detalle del framework completo.
+> ✅ Ampliado en [Dominio_5.md](ReadinessPath/Dominio_5.md)
 
-- ⚠️ Existe imagen de referencia pero falta explicación detallada de la matriz
-- ❌ Clasificación de casos de uso según riesgo y alcance
+- ✅ Explicación de dimensiones (alcance de datos y alcance de acción)
+- ✅ Niveles de riesgo (Bajo, Medio, Alto, Crítico)
+- ✅ Controles recomendados por nivel
 
 ---
 
@@ -118,49 +121,39 @@
 
 ---
 
-## Networking y Conectividad ⚠️
+## Networking y Conectividad ✅
 
-> ⚠️ Parcialmente cubierto en [Dominio_5.md](ReadinessPath/Dominio_5.md)
+> ✅ Cubierto en [Dominio_5.md](ReadinessPath/Dominio_5.md) y [Extra/Notas_Adicionales.md](Extra/Notas_Adicionales.md)
 
 - ✅ **VPC** - Aislamiento de red
 - ✅ **PrivateLink** - Conectividad privada sin internet público
-- ❌ **Gateway Endpoint** - Específico para S3/DynamoDB sin internet
-- ⚠️ **Latencia en respuestas** - Mencionado contexto de ventana en Dominio_2, pero falta detalle sobre factores de latencia
+- ✅ **Gateway Endpoint** - Cubierto en [Notas_Adicionales.md](Extra/Notas_Adicionales.md)
+- ✅ **Latencia en respuestas** - Factores detallados en [Dominio_2.md](ReadinessPath/Dominio_2.md)
 
 ---
 
-## Amazon Q ⚠️
+## Amazon Q ✅
 
-> ⚠️ Mención breve en [Dominio_2.md](ReadinessPath/Dominio_2.md), pero falta profundidad.
-
-### Cubierto
+> ✅ Cubierto en [Dominio_2.md](ReadinessPath/Dominio_2.md) y [Extra/Notas_Adicionales.md](Extra/Notas_Adicionales.md)
 
 - ✅ Amazon Q Developer (asistencia en código)
 - ✅ Amazon Q Suite (mención)
-
-### Sin cubrir
-
-- ❌ **Amazon Q Business** - Capacidades específicas empresariales
-- ❌ Implementación de RAG con Q Business
-- ❌ Integración con fuentes de datos empresariales
-- ❌ Amazon Q in QuickSight
+- ✅ **Amazon Q Business** - Cubierto en [Notas_Adicionales.md](Extra/Notas_Adicionales.md)
+- ✅ Implementación de RAG con Q Business
+- ✅ Integración con fuentes de datos empresariales
+- ✅ Amazon Q in QuickSight
 
 ---
 
-## Modelos de Clasificación ⚠️
+## Modelos de Clasificación ✅
 
-> ⚠️ Conceptos generales cubiertos, pero falta detalle específico.
-
-### Cubierto en [Dominio_1.md](ReadinessPath/Dominio_1.md)
+> ✅ Cubierto en [Dominio_1.md](ReadinessPath/Dominio_1.md) y [Extra/Notas_Adicionales.md](Extra/Notas_Adicionales.md)
 
 - ✅ Aprendizaje supervisado (concepto general)
 - ✅ Rekognition para clasificación de imágenes
-
-### Modelos sin cubrir
-
-- ❌ **Binary Classification** - Métricas específicas, casos de uso
-- ❌ **Multiclass Classification** - Estrategias one-vs-all, one-vs-one
-- ❌ **Image Classification** - Arquitecturas CNN, transfer learning
+- ✅ **Binary Classification** - Cubierto en [Notas_Adicionales.md](Extra/Notas_Adicionales.md)
+- ✅ **Multiclass Classification** - Cubierto en [Notas_Adicionales.md](Extra/Notas_Adicionales.md)
+- ✅ **Image Classification** - Cubierto en [Notas_Adicionales.md](Extra/Notas_Adicionales.md)
 
 ---
 
@@ -178,25 +171,25 @@
 - ✅ **Exposure** - Exposición de datos sensibles
 - ✅ **Guardrails como protección** - [Dominio_3.md](ReadinessPath/Dominio_3.md)
 
-### Técnicas específicas pendientes
+### Técnicas específicas de ataques
 
-- ❌ Ignoring the prompt template
-- ❌ Exploiting friendliness
-- ❌ Changing the input
-- ❌ Prompting persona switches
+> ✅ Cubierto en [SkillBuilder/Prompt_Engineering.md](SkillBuilder/Prompt_Engineering.md)
+
+- ✅ **Ignoring the prompt template** - Instruir al modelo a ignorar instrucciones del sistema
+- ✅ **Exploiting friendliness** - Explotar la naturaleza cooperativa del modelo
+- ✅ **Changing the input** - Ofuscación mediante codificación, fragmentación o traducción
+- ✅ **Prompting persona switches** - Adoptar personalidades alternativas sin restricciones (DAN, etc.)
 
 ---
 
-## Algoritmos de ML ❌
+## Algoritmos de ML ✅
 
-> ❌ No hay notas detalladas sobre algoritmos específicos de ML.
+> ✅ Cubierto en [Extra/Notas_Adicionales.md](Extra/Notas_Adicionales.md)
 
-- ❌ **Clustering** - K-means, hierarchical, DBSCAN
-- ❌ **Anomaly Detection** - Isolation Forest, autoencoders
-- ❌ **Forecasting** - ARIMA, Prophet, DeepAR
-- ❌ **Classification algorithms** - Random Forest, XGBoost, SVM
-
-> 💡 Solo se menciona aprendizaje no supervisado para "detección de anomalías" en Dominio_1, pero sin detalles de algoritmos.
+- ✅ **Clustering** - K-means, Hierarchical
+- ✅ **Anomaly Detection** - Isolation Forest, Autoencoders, servicios AWS
+- ✅ **Forecasting** - ARIMA, Prophet, DeepAR, Amazon Forecast
+- ✅ **Classification algorithms** - Random Forest, XGBoost, SVM, Logistic Regression
 
 ---
 
@@ -229,56 +222,30 @@
 
 ---
 
-## Temas Adicionales Identificados ❌
+## Temas Adicionales Identificados ✅
 
-> ❌ Temas relevantes encontrados que podrían faltar:
+> ✅ Cubierto en [Extra/Notas_Adicionales.md](Extra/Notas_Adicionales.md)
 
-- ❌ **Embeddings** - Solo mención conceptual, falta profundidad técnica
-- ❌ **Bases de datos vectoriales** - OpenSearch, Aurora pgvector mencionados pero sin detalle
-- ❌ **Tokenización** - Solo ejemplo visual, falta explicación técnica
-- ❌ **Bedrock Agents** - Mencionado pero sin casos de uso detallados
-- ❌ **PartyRock** - Solo mención, sin tutorial o detalles
-
----
-
-## Resumen de Estado Actualizado
-
-| Categoría | Total Temas | ✅ Cubiertos | ⚠️ Parciales | ❌ Sin Cubrir |
-|-----------|-------------|-------------|--------------|--------------|
-| SageMaker | 10 | 5 | 0 | 5 |
-| Métricas | 9 | 4 | 0 | 5 |
-| Compliance/Gobernanza | 15 | 15 | 0 | 0 |
-| Técnicas ML/AI | 8 | 7 | 1 | 0 |
-| Servicios AWS (Q, etc.) | 5 | 1 | 2 | 2 |
-| Algoritmos ML | 4 | 0 | 0 | 4 |
-| ML Lifecycle | 10 | 10 | 0 | 0 |
-| Prompt Security | 10 | 6 | 0 | 4 |
-| Networking | 4 | 2 | 1 | 1 |
-| Clasificación | 3 | 1 | 0 | 2 |
-| Adicionales | 5 | 0 | 0 | 5 |
-| **TOTAL** | **~83** | **~51 (61%)** | **~4 (5%)** | **~28 (34%)** |
+- ✅ **Embeddings** - Representaciones vectoriales, propiedades, usos
+- ✅ **Bases de datos vectoriales** - OpenSearch, Aurora pgvector, Neptune, MemoryDB
+- ✅ **Tokenización** - Word-level, character-level, subword (BPE, WordPiece)
+- ✅ **Bedrock Agents** - Componentes, flujo de trabajo, casos de uso
+- ✅ **PartyRock** - Plataforma sin código para experimentación
 
 ---
 
-## Prioridades de Estudio Recomendadas
+## ✅ Documentación Completada
 
-### 🔴 Alta Prioridad (sin cobertura)
+> 🎉 **Estado:** Todos los temas principales han sido cubiertos.
+>
+> Los temas marcados como ⚠️ (parciales) son variantes específicas de conceptos que ya están documentados en sus categorías principales.
 
-1. **Algoritmos de ML** - Clustering, Anomaly Detection, Forecasting
-2. **Métricas de ML tradicional** - MAPE, MAE, AUC-ROC
-3. **SageMaker Data Wrangler, Pipelines, Model Cards, Model Registry**
-4. **Amazon Q Business** - Capacidades empresariales
+### Estructura de Notas
 
-### 🟡 Media Prioridad (profundizar)
-
-1. **Generative AI Security Scoping Matrix** - Framework completo
-2. **Gateway Endpoints** - Detalles de networking
-3. **Técnicas de Prompt Injection** - Casos específicos
-
-### 🟢 Baja Prioridad (revisar detalles)
-
-1. Bases de datos vectoriales (implementación)
-2. Tokenización técnica
-3. Bedrock Agents (casos de uso avanzados)
+| Carpeta | Contenido |
+|---------|-----------|
+| `ReadinessPath/` | Dominios 1-5 (conceptos fundamentales del examen) |
+| `SkillBuilder/` | Prompt Engineering detallado |
+| `Extra/` | Notas adicionales (SageMaker, métricas, algoritmos, Q Business, etc.) |
 
 ---

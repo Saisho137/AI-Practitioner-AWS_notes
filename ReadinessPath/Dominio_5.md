@@ -254,11 +254,36 @@ Orientación en tiempo real para optimización de AWS.
 
 ---
 
-### Matriz de Alcance de Seguridad de IA Generativa
+### Matriz de Alcance de Seguridad de IA Generativa (Generative AI Security Scoping Matrix)
 
-Un modelo mental para clasificar casos de uso según riesgo y alcance.
+Un modelo mental para clasificar casos de uso según riesgo y alcance de seguridad.
 
 ![Matriz de alcance de seguridad](dominio_5_images/picatón%20pre.png)
+
+#### Dimensiones de la Matriz
+
+La matriz evalúa aplicaciones de IA generativa en dos dimensiones:
+
+| Dimensión | Descripción |
+|-----------|-------------|
+| **Alcance de datos** | Qué tan sensibles son los datos utilizados (públicos → confidenciales → regulados) |
+| **Alcance de acción** | Qué puede hacer la aplicación (solo lectura → escritura → acciones automatizadas) |
+
+#### Niveles de Riesgo
+
+| Nivel | Características | Ejemplo |
+|-------|-----------------|--------|
+| **Bajo** | Datos públicos, solo consultas de lectura | Chatbot de FAQ con información pública |
+| **Medio** | Datos internos, generación de contenido | Asistente para redacción de emails internos |
+| **Alto** | Datos sensibles, acciones en sistemas | Agente que modifica registros de clientes |
+| **Crítico** | Datos regulados (PII, PHI), decisiones automatizadas | Sistema de decisiones financieras o médicas |
+
+#### Controles Recomendados por Nivel
+
+- **Bajo**: Logging básico, términos de uso
+- **Medio**: Autenticación, auditoría, guardrails de contenido
+- **Alto**: MFA, cifrado, revisión humana, monitoreo en tiempo real
+- **Crítico**: Aislamiento de red, aprobaciones múltiples, cumplimiento normativo estricto
 
 ---
 

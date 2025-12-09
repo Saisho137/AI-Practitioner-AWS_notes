@@ -175,6 +175,23 @@ El contexto es un intercambio privado entre el usuario y el modelo.
 
 > **IMPORTANTE**: El modelo no lee solo tu último mensaje, lee TODA LA CONVERSACIÓN de nuevo después de cada mensaje. Por eso, mientras más largo sea el chat, puede disminuir la calidad de respuesta y aumentar el tiempo/costo de procesamiento.
 
+#### Factores que Afectan la Latencia
+
+| Factor | Impacto | Mitigación |
+|--------|---------|------------|
+| **Tokens de entrada** | A más tokens, mayor tiempo de procesamiento | Optimizar prompts, resumir contexto |
+| **Tokens de salida** | Generación secuencial aumenta latencia | Limitar max_tokens, usar streaming |
+| **Tamaño del modelo** | Modelos grandes = mayor latencia | Elegir modelo apropiado para el caso de uso |
+| **Ventana de contexto** | Conversaciones largas procesan todo de nuevo | Implementar resúmenes, limpiar historial |
+| **Concurrencia** | Alta demanda puede aumentar tiempos | Provisioned throughput en Bedrock |
+
+**Estrategias de optimización:**
+
+- Usar **streaming** para mostrar respuestas parciales al usuario
+- Implementar **caching** para respuestas frecuentes
+- Seleccionar el modelo más pequeño que cumpla los requisitos
+- Considerar **Provisioned Throughput** en Bedrock para cargas predecibles
+
 #### Ejemplo de uso de contexto
 
 ![El Transformer tiene que averiguar a qué se refiere](dominio_2_images/contexto-transformer.png)
