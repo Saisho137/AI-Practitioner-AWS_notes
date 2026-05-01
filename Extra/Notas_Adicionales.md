@@ -1,10 +1,8 @@
 # Notas Adicionales - AWS AI Practitioner
 
-> 📅 **Fecha de creación:** 8 de diciembre de 2025
+> Este documento complementa las notas de ReadinessPath con temas adicionales.
 >
-> Este documento complementa las notas de ReadinessPath con temas no cubiertos previamente.
->
-> ⚠️ Precaución: Este contenido adicional fue generado completamente con IA generativa, NO se debe aceptar el contenido expuesto como fuente de verdad
+> 📅 **Última revisión:** Abril 2026
 
 ---
 
@@ -26,19 +24,10 @@
 
 Herramienta visual para **preparación y transformación de datos** sin escribir código.
 
-**Características principales:**
-
 - Importa datos de múltiples fuentes (S3, Athena, Redshift, etc.)
-- Proporciona más de 300 transformaciones predefinidas
-- Análisis exploratorio de datos con visualizaciones automáticas
-- Detecta calidad de datos y sugiere correcciones
+- +300 transformaciones predefinidas
+- Análisis exploratorio con visualizaciones automáticas
 - Exporta flujos a notebooks, pipelines o Feature Store
-
-**Casos de uso:**
-
-- Limpieza y normalización de datasets
-- Ingeniería de features visual
-- Preparación de datos para entrenamiento
 
 ---
 
@@ -93,15 +82,7 @@ ProcessingStep → TrainingStep → ClarifyCheckStep → RegisterModel
 
 ### SageMaker Model Cards
 
-Documentación estructurada que describe un modelo ML.
-
-**Contenido típico:**
-
-- **Información del modelo**: Nombre, versión, propósito
-- **Uso previsto**: Casos de uso aprobados y restricciones
-- **Datos de entrenamiento**: Fuentes, características, sesgos conocidos
-- **Métricas de evaluación**: Rendimiento en diferentes segmentos
-- **Consideraciones éticas**: Limitaciones y riesgos
+Documentación estructurada de un modelo ML: propósito, uso previsto, datos de entrenamiento, métricas, consideraciones éticas y limitaciones.
 
 **Propósito:** Mejorar la transparencia y gobernanza de modelos ML en producción.
 
@@ -187,9 +168,7 @@ Real  Positivo     TP        FN
 
 ## Amazon Q Business
 
-Asistente de IA generativa para **empresas** que puede responder preguntas usando datos internos de la organización.
-
-### Características Principales
+Asistente de IA generativa **empresarial** que responde preguntas usando datos internos de la organización.
 
 | Característica | Descripción |
 |----------------|-------------|
@@ -269,8 +248,8 @@ Identifica patrones inusuales en los datos.
 
 **Servicios AWS relacionados:**
 
-- **Amazon Lookout for Metrics**: Detección automática de anomalías en métricas
-- **Amazon Lookout for Equipment**: Mantenimiento predictivo
+- **Amazon Lookout for Metrics**: Detección automática de anomalías en métricas *(servicio en proceso de deprecación)*
+- **Amazon Lookout for Equipment**: Mantenimiento predictivo *(servicio en proceso de deprecación)*
 
 ---
 
@@ -290,7 +269,7 @@ Predice valores futuros basándose en datos históricos (series temporales).
 
 **Servicio AWS:**
 
-- **Amazon Forecast**: Servicio gestionado para pronósticos con ML
+- **Amazon Forecast**: Servicio gestionado para pronósticos con ML *(servicio en proceso de deprecación; puede aparecer en el examen)*
   - Soporta múltiples algoritmos (DeepAR+, ARIMA, ETS, Prophet)
   - Maneja automáticamente features como días festivos
 
@@ -523,29 +502,7 @@ Permiten que los FMs **ejecuten tareas complejas** de forma autónoma.
 
 ### PartyRock
 
-Plataforma de **experimentación con IA generativa** sin código, construida sobre Amazon Bedrock.
-
-**Características:**
-
-- Interfaz visual drag-and-drop
-- Acceso gratuito (con límites)
-- No requiere cuenta de AWS
-- Ideal para prototipos rápidos y aprendizaje
-
-**Componentes disponibles:**
-
-- Generación de texto
-- Generación de imágenes
-- Chatbots
-- Widgets interactivos
-
-**Limitaciones:**
-
-- No para producción
-- Opciones de personalización limitadas
-- Sin integración con datos empresariales
-
-**URL:** [partyrock.aws](https://partyrock.aws)
+Plataforma de **experimentación con IA generativa** sin código, construida sobre Amazon Bedrock. Ideal para prototipos rápidos y aprendizaje. No para producción.
 
 ---
 

@@ -23,7 +23,7 @@
 - **Etiqueta / Target**: variable dependiente. Lo que intentas predecir.
 - **Característica / Feature**: variable independiente. Datos que ayudan a predecir.
 - **Ingeniería de características**: transformaciones de datos para aumentar su valor predictivo.
-- **Selección de funciones (feature selection)**: elegir las variables más valiosas o subconjuntos.
+- **Selección de características (feature selection)**: elegir las variables más relevantes para el modelo.
 
 ### Tipos de Machine Learning
 
