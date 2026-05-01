@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "@docusaurus/Link";
+import { useBaseUrlUtils } from "@docusaurus/useBaseUrl";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import clsx from "clsx";
@@ -103,9 +104,16 @@ const RESOURCES = [
     desc: "Documento oficial del examen AI Practitioner",
     href: "https://aws.amazon.com/certification/certified-ai-practitioner/",
   },
+  {
+    icon: "📄",
+    title: "Material PDF",
+    desc: "Exam Guide oficial + sesiones de estudio en PDF",
+    href: "/PDFs/AWS-Certified-AI-Practitioner_Exam-Guide.pdf",
+  },
 ];
 
 function HeroBanner() {
+  const { withBaseUrl } = useBaseUrlUtils();
   return (
     <div className={styles.heroBanner}>
       <div className="container">
@@ -122,13 +130,17 @@ function HeroBanner() {
           <Link className="button button--primary button--lg" to="/docs/intro">
             Comenzar a estudiar →
           </Link>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/readiness-path/dominio-1"
-            style={{ color: "#fff", borderColor: "rgba(255,255,255,0.3)" }}
+          <a
+            className="button button--lg"
+            href={withBaseUrl("/docs/readiness-path/dominio-1")}
+            style={{
+              color: "#fff",
+              background: "rgba(255,255,255,0.12)",
+              border: "1.5px solid rgba(255,255,255,0.45)",
+            }}
           >
             Ver Dominio 1
-          </Link>
+          </a>
         </div>
         <div className={styles.statsRow}>
           <div className={styles.statItem}>
@@ -154,6 +166,7 @@ function HeroBanner() {
 }
 
 function DomainsSection() {
+  const { withBaseUrl } = useBaseUrlUtils();
   return (
     <section className={clsx("container", styles.domainsSection)}>
       <h2 className={styles.sectionTitle}>Estructura del Examen</h2>
@@ -162,9 +175,9 @@ function DomainsSection() {
       </p>
       <div className={styles.domainGrid}>
         {DOMAINS.map((d) => (
-          <Link
+          <a
             key={d.number}
-            to={d.href}
+            href={withBaseUrl(d.href)}
             className={clsx(styles.domainCard, d.className)}
           >
             <div className={styles.domainHeader}>
@@ -178,7 +191,7 @@ function DomainsSection() {
                 <li key={t}>{t}</li>
               ))}
             </ul>
-          </Link>
+          </a>
         ))}
       </div>
     </section>
@@ -186,6 +199,7 @@ function DomainsSection() {
 }
 
 function ResourcesSection() {
+  const { withBaseUrl } = useBaseUrlUtils();
   return (
     <section className={styles.resourcesSection}>
       <div className="container">
@@ -194,18 +208,23 @@ function ResourcesSection() {
           Todo lo que necesitas en un solo lugar
         </p>
         <div className={styles.resourceGrid}>
-          {RESOURCES.map((r) => (
-            <Link
-              key={r.title}
-              to={r.href}
-              className={styles.resourceCard}
-              style={{ textDecoration: "none" }}
-            >
-              <span className={styles.resourceIcon}>{r.icon}</span>
-              <span className={styles.resourceTitle}>{r.title}</span>
-              <p className={styles.resourceDesc}>{r.desc}</p>
-            </Link>
-          ))}
+          {RESOURCES.map((r) => {
+            const isExternal = r.href.startsWith("http");
+            return (
+              <a
+                key={r.title}
+                href={isExternal ? r.href : withBaseUrl(r.href)}
+                className={styles.resourceCard}
+                style={{ textDecoration: "none" }}
+                target={isExternal ? "_blank" : undefined}
+                rel={isExternal ? "noopener noreferrer" : undefined}
+              >
+                <span className={styles.resourceIcon}>{r.icon}</span>
+                <span className={styles.resourceTitle}>{r.title}</span>
+                <p className={styles.resourceDesc}>{r.desc}</p>
+              </a>
+            );
+          })}
         </div>
       </div>
     </section>

@@ -53,5 +53,19 @@ Notas complementarias sobre temas no cubiertos completamente en los dominios pri
 
 ---
 
+## 📄 Material en PDF
+
+Descarga los materiales de estudio en formato PDF:
+
+| Documento | Descripción |
+| --------- | ----------- |
+| [Exam Guide Oficial](/PDFs/AWS-Certified-AI-Practitioner_Exam-Guide.pdf) | Guía oficial del examen publicada por AWS |
+| [Sesión 1 — Dominio 1](/PDFs/sesion-1-dominio-1.pdf) | Fundamentos de IA y ML (20%) |
+| [Sesión 2 — Dominio 2](/PDFs/sesion-2-dominio-2.pdf) | Fundamentos de IA Generativa (24%) |
+| [Sesión 3 — Dominio 3](/PDFs/sesion-3-dominio-3.pdf) | Aplicaciones de Foundation Models (28%) |
+| [Sesión 4 — Dominios 4 y 5](/PDFs/sesion-4-dominio-4-y-5.pdf) | IA Responsable + Seguridad y Gobernanza (14% + 14%) |
+
+---
+
 **Autor**: Santiago Betancur  
 **Última actualización**: Diciembre 2025
