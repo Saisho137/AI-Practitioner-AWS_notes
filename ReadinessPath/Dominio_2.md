@@ -177,13 +177,13 @@ El contexto es un intercambio privado entre el usuario y el modelo.
 
 #### Factores que Afectan la Latencia
 
-| Factor | Impacto | Mitigación |
-|--------|---------|------------|
-| **Tokens de entrada** | A más tokens, mayor tiempo de procesamiento | Optimizar prompts, resumir contexto |
-| **Tokens de salida** | Generación secuencial aumenta latencia | Limitar max_tokens, usar streaming |
-| **Tamaño del modelo** | Modelos grandes = mayor latencia | Elegir modelo apropiado para el caso de uso |
-| **Ventana de contexto** | Conversaciones largas procesan todo de nuevo | Implementar resúmenes, limpiar historial |
-| **Concurrencia** | Alta demanda puede aumentar tiempos | Provisioned throughput en Bedrock |
+| Factor                  | Impacto                                      | Mitigación                                  |
+| ----------------------- | -------------------------------------------- | ------------------------------------------- |
+| **Tokens de entrada**   | A más tokens, mayor tiempo de procesamiento  | Optimizar prompts, resumir contexto         |
+| **Tokens de salida**    | Generación secuencial aumenta latencia       | Limitar max_tokens, usar streaming          |
+| **Tamaño del modelo**   | Modelos grandes = mayor latencia             | Elegir modelo apropiado para el caso de uso |
+| **Ventana de contexto** | Conversaciones largas procesan todo de nuevo | Implementar resúmenes, limpiar historial    |
+| **Concurrencia**        | Alta demanda puede aumentar tiempos          | Provisioned throughput en Bedrock           |
 
 **Estrategias de optimización:**
 

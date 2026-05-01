@@ -1,0 +1,10 @@
+{
+  "label": "📦 Extra",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "title": "Extra — Notas Complementarias",
+    "description": "Temas adicionales que complementan los dominios: métricas de ML, algoritmos, embeddings, bases de datos vectoriales, tokenización y más.",
+    "slug": "/extra"
+  }
+}

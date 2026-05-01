@@ -264,18 +264,18 @@ Un modelo mental para clasificar casos de uso según riesgo y alcance de segurid
 
 La matriz evalúa aplicaciones de IA generativa en dos dimensiones:
 
-| Dimensión | Descripción |
-|-----------|-------------|
-| **Alcance de datos** | Qué tan sensibles son los datos utilizados (públicos → confidenciales → regulados) |
-| **Alcance de acción** | Qué puede hacer la aplicación (solo lectura → escritura → acciones automatizadas) |
+| Dimensión             | Descripción                                                                        |
+| --------------------- | ---------------------------------------------------------------------------------- |
+| **Alcance de datos**  | Qué tan sensibles son los datos utilizados (públicos → confidenciales → regulados) |
+| **Alcance de acción** | Qué puede hacer la aplicación (solo lectura → escritura → acciones automatizadas)  |
 
 #### Niveles de Riesgo
 
-| Nivel | Características | Ejemplo |
-|-------|-----------------|--------|
-| **Bajo** | Datos públicos, solo consultas de lectura | Chatbot de FAQ con información pública |
-| **Medio** | Datos internos, generación de contenido | Asistente para redacción de emails internos |
-| **Alto** | Datos sensibles, acciones en sistemas | Agente que modifica registros de clientes |
+| Nivel       | Características                                      | Ejemplo                                     |
+| ----------- | ---------------------------------------------------- | ------------------------------------------- |
+| **Bajo**    | Datos públicos, solo consultas de lectura            | Chatbot de FAQ con información pública      |
+| **Medio**   | Datos internos, generación de contenido              | Asistente para redacción de emails internos |
+| **Alto**    | Datos sensibles, acciones en sistemas                | Agente que modifica registros de clientes   |
 | **Crítico** | Datos regulados (PII, PHI), decisiones automatizadas | Sistema de decisiones financieras o médicas |
 
 #### Controles Recomendados por Nivel

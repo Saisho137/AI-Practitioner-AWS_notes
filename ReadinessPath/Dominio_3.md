@@ -133,7 +133,7 @@ El modelo muestra su razonamiento paso a paso antes de llegar a la respuesta fin
 
 **Ejemplo Few-Shot + CoT:**
 
-![alt text](<dominio_3_images/Ejemplo_fewshot_cot.png>)
+![alt text](dominio_3_images/Ejemplo_fewshot_cot.png)
 
 ### Técnicas comunes de instrucciones adversarias
 
@@ -238,12 +238,12 @@ Amazon Bedrock permite:
 
 #### Principales métricas de evaluación
 
-| Métrica | Caso de Uso | Descripción |
-|---------|-------------|-------------|
-| **ROUGE** | Resumen de texto | Mide la superposición de n-gramas entre el texto generado y el de referencia |
-| **BLEU** | Traducción | Evalúa la calidad de la traducción automática comparando con traducciones de referencia |
-| **BERTScore** | Similitud semántica | Usa embeddings de BERT para medir similitud contextual |
-| **F1 Score** | Q&A (Preguntas y respuestas) | Balance entre precisión y recall en tareas de clasificación |
+| Métrica       | Caso de Uso                  | Descripción                                                                             |
+| ------------- | ---------------------------- | --------------------------------------------------------------------------------------- |
+| **ROUGE**     | Resumen de texto             | Mide la superposición de n-gramas entre el texto generado y el de referencia            |
+| **BLEU**      | Traducción                   | Evalúa la calidad de la traducción automática comparando con traducciones de referencia |
+| **BERTScore** | Similitud semántica          | Usa embeddings de BERT para medir similitud contextual                                  |
+| **F1 Score**  | Q&A (Preguntas y respuestas) | Balance entre precisión y recall en tareas de clasificación                             |
 
 > **Importante para el examen**: Estas métricas son las que MÁS salen en el examen (pueden aparecer otras adicionales).
 

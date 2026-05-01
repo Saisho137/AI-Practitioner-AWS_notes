@@ -37,12 +37,12 @@ Framework para **orquestar flujos de trabajo de ML** de extremo a extremo.
 
 **Componentes:**
 
-| Componente | Descripción |
-|------------|-------------|
-| **Steps** | Pasos individuales (procesamiento, entrenamiento, evaluación) |
-| **Parameters** | Variables configurables para el pipeline |
-| **Conditions** | Lógica condicional para ramificaciones |
-| **Callbacks** | Integración con servicios externos |
+| Componente     | Descripción                                                   |
+| -------------- | ------------------------------------------------------------- |
+| **Steps**      | Pasos individuales (procesamiento, entrenamiento, evaluación) |
+| **Parameters** | Variables configurables para el pipeline                      |
+| **Conditions** | Lógica condicional para ramificaciones                        |
+| **Callbacks**  | Integración con servicios externos                            |
 
 **Beneficios:**
 
@@ -53,11 +53,11 @@ Framework para **orquestar flujos de trabajo de ML** de extremo a extremo.
 
 #### Tipos de Steps en SageMaker Pipelines
 
-| Step | Propósito | Descripción |
-|------|-----------|-------------|
-| **Processing** | Preparación de datos | Ejecuta trabajos de procesamiento para limpieza, transformación y **feature engineering**. |
-| **Training** | Entrenamiento del modelo | Lanza un trabajo de entrenamiento con el algoritmo y datos especificados. |
-| **Tuning** | Optimización de hiperparámetros | Ejecuta Hyperparameter Tuning Jobs para encontrar la mejor combinación de hiperparámetros automáticamente. |
+| Step             | Propósito                              | Descripción                                                                                                         |
+| ---------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| **Processing**   | Preparación de datos                   | Ejecuta trabajos de procesamiento para limpieza, transformación y **feature engineering**.                          |
+| **Training**     | Entrenamiento del modelo               | Lanza un trabajo de entrenamiento con el algoritmo y datos especificados.                                           |
+| **Tuning**       | Optimización de hiperparámetros        | Ejecuta Hyperparameter Tuning Jobs para encontrar la mejor combinación de hiperparámetros automáticamente.          |
 | **ClarifyCheck** | Verificación de sesgo y explicabilidad | Ejecuta análisis de SageMaker Clarify para detectar sesgos en datos o modelo, y generar reportes de explicabilidad. |
 
 **Flujo típico de un pipeline:**
@@ -70,13 +70,13 @@ ProcessingStep → TrainingStep → ClarifyCheckStep → RegisterModel
 
 **Otros steps disponibles:**
 
-| Step | Propósito |
-|------|-----------|
-| **CreateModelStep** | Crea un modelo desplegable a partir de artefactos |
-| **RegisterModelStep** | Registra el modelo en Model Registry |
-| **ConditionStep** | Ramificación condicional (ej: si accuracy > 0.9) |
-| **FailStep** | Termina el pipeline con error |
-| **CallbackStep** | Integración con sistemas externos vía SQS |
+| Step                  | Propósito                                         |
+| --------------------- | ------------------------------------------------- |
+| **CreateModelStep**   | Crea un modelo desplegable a partir de artefactos |
+| **RegisterModelStep** | Registra el modelo en Model Registry              |
+| **ConditionStep**     | Ramificación condicional (ej: si accuracy > 0.9)  |
+| **FailStep**          | Termina el pipeline con error                     |
+| **CallbackStep**      | Integración con sistemas externos vía SQS         |
 
 ---
 
@@ -110,12 +110,12 @@ Repositorio centralizado para **gestionar versiones de modelos**.
 
 ### Métricas de Regresión
 
-| Métrica | Fórmula | Interpretación |
-|---------|---------|----------------|
-| **MAE** (Mean Absolute Error) | $\frac{1}{n}\sum\|y_i - \hat{y}_i\|$ | Error promedio absoluto. Fácil de interpretar. |
-| **MAPE** (Mean Absolute Percentage Error) | $\frac{100}{n}\sum\|\frac{y_i - \hat{y}_i}{y_i}\|$ | Error porcentual. Útil para comparar entre datasets. |
-| **RMSE** (Root Mean Square Error) | $\sqrt{\frac{1}{n}\sum(y_i - \hat{y}_i)^2}$ | Penaliza errores grandes. Misma unidad que la variable objetivo. |
-| **R²** (Coeficiente de determinación) | $1 - \frac{SS_{res}}{SS_{tot}}$ | Proporción de varianza explicada (0-1). |
+| Métrica                                   | Fórmula                                            | Interpretación                                                   |
+| ----------------------------------------- | -------------------------------------------------- | ---------------------------------------------------------------- |
+| **MAE** (Mean Absolute Error)             | $\frac{1}{n}\sum\|y_i - \hat{y}_i\|$               | Error promedio absoluto. Fácil de interpretar.                   |
+| **MAPE** (Mean Absolute Percentage Error) | $\frac{100}{n}\sum\|\frac{y_i - \hat{y}_i}{y_i}\|$ | Error porcentual. Útil para comparar entre datasets.             |
+| **RMSE** (Root Mean Square Error)         | $\sqrt{\frac{1}{n}\sum(y_i - \hat{y}_i)^2}$        | Penaliza errores grandes. Misma unidad que la variable objetivo. |
+| **R²** (Coeficiente de determinación)     | $1 - \frac{SS_{res}}{SS_{tot}}$                    | Proporción de varianza explicada (0-1).                          |
 
 **Cuándo usar cada una:**
 
@@ -144,12 +144,12 @@ Real  Positivo     TP        FN
 
 #### Métricas Derivadas
 
-| Métrica | Fórmula | Cuándo usar |
-|---------|---------|-------------|
-| **Precision** | $\frac{TP}{TP + FP}$ | Cuando FP son costosos (ej: spam, fraude) |
-| **Recall** (Sensibilidad) | $\frac{TP}{TP + FN}$ | Cuando FN son costosos (ej: diagnóstico médico) |
-| **F1 Score** | $2 \times \frac{Precision \times Recall}{Precision + Recall}$ | Balance entre Precision y Recall |
-| **Accuracy** | $\frac{TP + TN}{Total}$ | Clases balanceadas |
+| Métrica                   | Fórmula                                                       | Cuándo usar                                     |
+| ------------------------- | ------------------------------------------------------------- | ----------------------------------------------- |
+| **Precision**             | $\frac{TP}{TP + FP}$                                          | Cuando FP son costosos (ej: spam, fraude)       |
+| **Recall** (Sensibilidad) | $\frac{TP}{TP + FN}$                                          | Cuando FN son costosos (ej: diagnóstico médico) |
+| **F1 Score**              | $2 \times \frac{Precision \times Recall}{Precision + Recall}$ | Balance entre Precision y Recall                |
+| **Accuracy**              | $\frac{TP + TN}{Total}$                                       | Clases balanceadas                              |
 
 #### AUC-ROC
 
@@ -170,12 +170,12 @@ Real  Positivo     TP        FN
 
 Asistente de IA generativa **empresarial** que responde preguntas usando datos internos de la organización.
 
-| Característica | Descripción |
-|----------------|-------------|
-| **Conversaciones en lenguaje natural** | Preguntas y respuestas sobre datos empresariales |
-| **RAG integrado** | Conecta con fuentes de datos para respuestas contextuales |
-| **Plugins de acciones** | Ejecuta tareas en aplicaciones empresariales |
-| **Guardrails empresariales** | Control de acceso basado en permisos existentes |
+| Característica                         | Descripción                                               |
+| -------------------------------------- | --------------------------------------------------------- |
+| **Conversaciones en lenguaje natural** | Preguntas y respuestas sobre datos empresariales          |
+| **RAG integrado**                      | Conecta con fuentes de datos para respuestas contextuales |
+| **Plugins de acciones**                | Ejecuta tareas en aplicaciones empresariales              |
+| **Guardrails empresariales**           | Control de acceso basado en permisos existentes           |
 
 ### Fuentes de Datos Soportadas
 
@@ -200,12 +200,12 @@ Permite hacer **preguntas en lenguaje natural** sobre dashboards y datos.
 
 ### Diferencia con Amazon Bedrock
 
-| Aspecto | Amazon Q Business | Amazon Bedrock |
-|---------|-------------------|----------------|
-| **Propósito** | Asistente empresarial listo para usar | Plataforma para construir aplicaciones GenAI |
-| **Configuración** | Mínima (conectar fuentes de datos) | Requiere desarrollo |
-| **Personalización** | Limitada a configuración | Alta (prompts, fine-tuning, agentes) |
-| **Caso de uso** | Productividad empresarial | Aplicaciones personalizadas de IA |
+| Aspecto             | Amazon Q Business                     | Amazon Bedrock                               |
+| ------------------- | ------------------------------------- | -------------------------------------------- |
+| **Propósito**       | Asistente empresarial listo para usar | Plataforma para construir aplicaciones GenAI |
+| **Configuración**   | Mínima (conectar fuentes de datos)    | Requiere desarrollo                          |
+| **Personalización** | Limitada a configuración              | Alta (prompts, fine-tuning, agentes)         |
+| **Caso de uso**     | Productividad empresarial             | Aplicaciones personalizadas de IA            |
 
 ---
 
@@ -239,17 +239,17 @@ Identifica patrones inusuales en los datos.
 
 #### Técnicas Comunes
 
-| Técnica | Descripción | Caso de uso |
-|---------|-------------|-------------|
-| **Isolation Forest** | Aísla anomalías mediante particiones aleatorias | Fraude, intrusiones |
-| **One-Class SVM** | Define límite de normalidad | Monitoreo de equipos |
-| **Autoencoders** | Reconstrucción de datos; anomalías tienen alto error | Imágenes, series temporales |
-| **Statistical methods** | Z-score, IQR para detectar outliers | Datos numéricos simples |
+| Técnica                 | Descripción                                          | Caso de uso                 |
+| ----------------------- | ---------------------------------------------------- | --------------------------- |
+| **Isolation Forest**    | Aísla anomalías mediante particiones aleatorias      | Fraude, intrusiones         |
+| **One-Class SVM**       | Define límite de normalidad                          | Monitoreo de equipos        |
+| **Autoencoders**        | Reconstrucción de datos; anomalías tienen alto error | Imágenes, series temporales |
+| **Statistical methods** | Z-score, IQR para detectar outliers                  | Datos numéricos simples     |
 
 **Servicios AWS relacionados:**
 
-- **Amazon Lookout for Metrics**: Detección automática de anomalías en métricas *(servicio en proceso de deprecación)*
-- **Amazon Lookout for Equipment**: Mantenimiento predictivo *(servicio en proceso de deprecación)*
+- **Amazon Lookout for Metrics**: Detección automática de anomalías en métricas _(servicio en proceso de deprecación)_
+- **Amazon Lookout for Equipment**: Mantenimiento predictivo _(servicio en proceso de deprecación)_
 
 ---
 
@@ -269,7 +269,7 @@ Predice valores futuros basándose en datos históricos (series temporales).
 
 **Servicio AWS:**
 
-- **Amazon Forecast**: Servicio gestionado para pronósticos con ML *(servicio en proceso de deprecación; puede aparecer en el examen)*
+- **Amazon Forecast**: Servicio gestionado para pronósticos con ML _(servicio en proceso de deprecación; puede aparecer en el examen)_
   - Soporta múltiples algoritmos (DeepAR+, ARIMA, ETS, Prophet)
   - Maneja automáticamente features como días festivos
 
@@ -277,12 +277,12 @@ Predice valores futuros basándose en datos históricos (series temporales).
 
 ### Algoritmos de Clasificación
 
-| Algoritmo | Tipo | Fortalezas |
-|-----------|------|------------|
-| **Random Forest** | Ensemble de árboles | Robusto, maneja outliers, interpretable |
-| **XGBoost** | Gradient Boosting | Alto rendimiento, usado en competencias |
-| **SVM** | Margen máximo | Efectivo en alta dimensión |
-| **Logistic Regression** | Lineal | Simple, interpretable, baseline sólido |
+| Algoritmo               | Tipo                | Fortalezas                              |
+| ----------------------- | ------------------- | --------------------------------------- |
+| **Random Forest**       | Ensemble de árboles | Robusto, maneja outliers, interpretable |
+| **XGBoost**             | Gradient Boosting   | Alto rendimiento, usado en competencias |
+| **SVM**                 | Margen máximo       | Efectivo en alta dimensión              |
+| **Logistic Regression** | Lineal              | Simple, interpretable, baseline sólido  |
 
 ---
 
@@ -299,21 +299,21 @@ Permiten acceso **privado** a servicios de AWS sin usar internet público.
 
 **Características:**
 
-| Aspecto | Descripción |
-|---------|-------------|
-| **Costo** | Sin cargo adicional |
-| **Seguridad** | Tráfico nunca sale de la red de AWS |
-| **Configuración** | Se añade entrada en tabla de rutas |
+| Aspecto           | Descripción                             |
+| ----------------- | --------------------------------------- |
+| **Costo**         | Sin cargo adicional                     |
+| **Seguridad**     | Tráfico nunca sale de la red de AWS     |
+| **Configuración** | Se añade entrada en tabla de rutas      |
 | **Restricciones** | Solo funciona dentro de la misma región |
 
 ### Diferencia: Gateway vs Interface Endpoints
 
-| Tipo | Gateway Endpoint | Interface Endpoint (PrivateLink) |
-|------|------------------|----------------------------------|
-| **Servicios** | Solo S3 y DynamoDB | Mayoría de servicios AWS |
-| **Costo** | Gratis | Cargo por hora y datos |
-| **Implementación** | Entrada en tabla de rutas | ENI en la subnet |
-| **Acceso cross-region** | No | Sí (algunos servicios) |
+| Tipo                    | Gateway Endpoint          | Interface Endpoint (PrivateLink) |
+| ----------------------- | ------------------------- | -------------------------------- |
+| **Servicios**           | Solo S3 y DynamoDB        | Mayoría de servicios AWS         |
+| **Costo**               | Gratis                    | Cargo por hora y datos           |
+| **Implementación**      | Entrada en tabla de rutas | ENI en la subnet                 |
+| **Acceso cross-region** | No                        | Sí (algunos servicios)           |
 
 **Cuándo usar Gateway Endpoints:**
 
@@ -354,11 +354,11 @@ Predice entre **más de dos clases**.
 
 **Estrategias:**
 
-| Estrategia | Descripción |
-|------------|-------------|
-| **One-vs-All (OvA)** | Entrena N clasificadores binarios (uno por clase) |
-| **One-vs-One (OvO)** | Entrena N(N-1)/2 clasificadores (cada par de clases) |
-| **Softmax/Multinomial** | Modelo único que predice probabilidad de cada clase |
+| Estrategia              | Descripción                                          |
+| ----------------------- | ---------------------------------------------------- |
+| **One-vs-All (OvA)**    | Entrena N clasificadores binarios (uno por clase)    |
+| **One-vs-One (OvO)**    | Entrena N(N-1)/2 clasificadores (cada par de clases) |
+| **Softmax/Multinomial** | Modelo único que predice probabilidad de cada clase  |
 
 **Ejemplos:**
 
@@ -429,13 +429,13 @@ Almacenan y buscan eficientemente vectores (embeddings).
 
 **Servicios AWS compatibles:**
 
-| Servicio | Descripción |
-|----------|-------------|
-| **Amazon OpenSearch Service** | Motor de búsqueda con k-NN plugin |
-| **Amazon Aurora PostgreSQL** | Extensión pgvector |
-| **Amazon Neptune** | Base de datos de grafos con soporte vectorial |
-| **Amazon MemoryDB** | Redis compatible con búsqueda vectorial |
-| **Amazon DocumentDB** | Soporta búsqueda vectorial |
+| Servicio                      | Descripción                                   |
+| ----------------------------- | --------------------------------------------- |
+| **Amazon OpenSearch Service** | Motor de búsqueda con k-NN plugin             |
+| **Amazon Aurora PostgreSQL**  | Extensión pgvector                            |
+| **Amazon Neptune**            | Base de datos de grafos con soporte vectorial |
+| **Amazon MemoryDB**           | Redis compatible con búsqueda vectorial       |
+| **Amazon DocumentDB**         | Soporta búsqueda vectorial                    |
 
 **Operaciones clave:**
 
@@ -451,11 +451,11 @@ Proceso de dividir texto en unidades más pequeñas (**tokens**) para procesamie
 
 **Tipos de tokenización:**
 
-| Tipo | Ejemplo para "playing" | Descripción |
-|------|------------------------|-------------|
-| **Word-level** | `["playing"]` | Palabra completa |
-| **Character-level** | `["p","l","a","y","i","n","g"]` | Cada carácter |
-| **Subword (BPE)** | `["play", "ing"]` | Balance entre ambos |
+| Tipo                | Ejemplo para "playing"          | Descripción         |
+| ------------------- | ------------------------------- | ------------------- |
+| **Word-level**      | `["playing"]`                   | Palabra completa    |
+| **Character-level** | `["p","l","a","y","i","n","g"]` | Cada carácter       |
+| **Subword (BPE)**   | `["play", "ing"]`               | Balance entre ambos |
 
 **Subword tokenization (más usado en LLMs):**
 
@@ -477,12 +477,12 @@ Permiten que los FMs **ejecuten tareas complejas** de forma autónoma.
 
 **Componentes:**
 
-| Componente | Función |
-|------------|---------|
-| **Foundation Model** | Razonamiento y planificación |
-| **Instructions** | Guía el comportamiento del agente |
-| **Action Groups** | Funciones que el agente puede ejecutar (Lambda) |
-| **Knowledge Bases** | Acceso a datos empresariales (RAG) |
+| Componente           | Función                                         |
+| -------------------- | ----------------------------------------------- |
+| **Foundation Model** | Razonamiento y planificación                    |
+| **Instructions**     | Guía el comportamiento del agente               |
+| **Action Groups**    | Funciones que el agente puede ejecutar (Lambda) |
+| **Knowledge Bases**  | Acceso a datos empresariales (RAG)              |
 
 **Flujo de trabajo:**
 
@@ -508,16 +508,16 @@ Plataforma de **experimentación con IA generativa** sin código, construida sob
 
 ## Resumen de Servicios SageMaker
 
-| Servicio | Propósito | Notas clave |
-|----------|-----------|-------------|
-| **Data Wrangler** | Preparación de datos | Visual, +300 transformaciones |
-| **Pipelines** | Orquestación ML | CI/CD para ML |
-| **Model Cards** | Documentación | Transparencia y gobernanza |
-| **Model Registry** | Versionado | Estados: Pending/Approved/Rejected |
-| **JumpStart** | FMs pre-entrenados | Acceso rápido a modelos |
-| **Clarify** | Bias y explicabilidad | Asociado a "sesgo" |
-| **Model Monitor** | Monitoreo drift | Asociado a "desviaciones" |
-| **Ground Truth** | Etiquetado de datos | RLHF, anotación humana |
+| Servicio           | Propósito             | Notas clave                        |
+| ------------------ | --------------------- | ---------------------------------- |
+| **Data Wrangler**  | Preparación de datos  | Visual, +300 transformaciones      |
+| **Pipelines**      | Orquestación ML       | CI/CD para ML                      |
+| **Model Cards**    | Documentación         | Transparencia y gobernanza         |
+| **Model Registry** | Versionado            | Estados: Pending/Approved/Rejected |
+| **JumpStart**      | FMs pre-entrenados    | Acceso rápido a modelos            |
+| **Clarify**        | Bias y explicabilidad | Asociado a "sesgo"                 |
+| **Model Monitor**  | Monitoreo drift       | Asociado a "desviaciones"          |
+| **Ground Truth**   | Etiquetado de datos   | RLHF, anotación humana             |
 
 ---
 

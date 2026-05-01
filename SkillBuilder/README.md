@@ -6,8 +6,8 @@ Notas complementarias de AWS SkillBuilder que profundizan temas cubiertos en los
 
 ## 📚 Contenido
 
-| Tema | Descripción | Enlace |
-|------|-------------|--------|
+| Tema                   | Descripción                                                                                                                                   | Enlace                               |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ |
 | **Prompt Engineering** | Parámetros de inferencia detallados, riesgos de seguridad (Poisoning, Hijacking, Jailbreaking, etc.), técnicas de ataques y mejores prácticas | [Ver notas](./Prompt_Engineering.md) |
 
 ---

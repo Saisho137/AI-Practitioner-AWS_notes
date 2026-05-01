@@ -8,13 +8,13 @@ Esta sección contiene las notas completas de los 5 dominios del examen oficial 
 
 La certificación AWS AI Practitioner está compuesta por 5 dominios con diferentes pesos:
 
-| Dominio | Peso |
-|---------|------|
-| **Fundamentos de IA y ML** | 20% |
-| **Fundamentos de IA Generativa** | 24% |
-| **Aplicaciones de los Foundation Models** | 28% |
-| **Directrices para la IA Responsable** | 14% |
-| **Seguridad, Cumplimiento y Gobernanza para Soluciones de IA** | 14% |
+| Dominio                                                        | Peso |
+| -------------------------------------------------------------- | ---- |
+| **Fundamentos de IA y ML**                                     | 20%  |
+| **Fundamentos de IA Generativa**                               | 24%  |
+| **Aplicaciones de los Foundation Models**                      | 28%  |
+| **Directrices para la IA Responsable**                         | 14%  |
+| **Seguridad, Cumplimiento y Gobernanza para Soluciones de IA** | 14%  |
 
 ---
 

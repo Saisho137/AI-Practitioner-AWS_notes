@@ -1,0 +1,10 @@
+{
+  "label": "🎯 SkillBuilder",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "title": "SkillBuilder — Temas Específicos",
+    "description": "Profundización en temas clave de AWS SkillBuilder: parámetros de inferencia avanzados y ataques de seguridad en prompts.",
+    "slug": "/skill-builder"
+  }
+}

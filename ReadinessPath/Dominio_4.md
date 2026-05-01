@@ -32,7 +32,7 @@ Para identificar desequilibrios en los datos, se puede calcular la relación ent
 
 ### Problemas de Generalización del Modelo - Sesgo vs Varianza
 
-![Underfitting vs Overfitting](dominio_4_images/Underfitting%20(subajuste).png)
+![Underfitting vs Overfitting](<dominio_4_images/Underfitting%20(subajuste).png>)
 
 #### Analogías para entender el ajuste del modelo
 

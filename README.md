@@ -24,13 +24,13 @@ Material organizado por dominios siguiendo la estructura del examen oficial.
 
 La certificación AWS AI Practitioner está compuesta por 5 dominios con diferentes pesos:
 
-| Dominio | Peso |
-|---------|------|
-| **Fundamentos de IA y ML** | 20% |
-| **Fundamentos de IA Generativa** | 24% |
-| **Aplicaciones de los Foundation Models** | 28% |
-| **Directrices para la IA Responsable** | 14% |
-| **Seguridad, Cumplimiento y Gobernanza para Soluciones de IA** | 14% |
+| Dominio                                                        | Peso |
+| -------------------------------------------------------------- | ---- |
+| **Fundamentos de IA y ML**                                     | 20%  |
+| **Fundamentos de IA Generativa**                               | 24%  |
+| **Aplicaciones de los Foundation Models**                      | 28%  |
+| **Directrices para la IA Responsable**                         | 14%  |
+| **Seguridad, Cumplimiento y Gobernanza para Soluciones de IA** | 14%  |
 
 ## 📖 Contenido
 
@@ -91,13 +91,13 @@ Notas complementarias sobre temas no cubiertos en los dominios principales.
 
 **[Ver Notas Adicionales →](Extra/Notas_Adicionales.md)**
 
-| Tema | Contenido |
-|------|----------|
-| **SageMaker** | Data Wrangler, Pipelines, Model Cards, Model Registry |
-| **Métricas ML** | MAE, MAPE, RMSE, Precision, Recall, AUC-ROC |
-| **Amazon Q Business** | Capacidades empresariales, RAG integrado, QuickSight |
-| **Algoritmos ML** | Clustering, Anomaly Detection, Forecasting, Classification |
-| **Networking** | Gateway Endpoints vs Interface Endpoints |
+| Tema                   | Contenido                                                            |
+| ---------------------- | -------------------------------------------------------------------- |
+| **SageMaker**          | Data Wrangler, Pipelines, Model Cards, Model Registry                |
+| **Métricas ML**        | MAE, MAPE, RMSE, Precision, Recall, AUC-ROC                          |
+| **Amazon Q Business**  | Capacidades empresariales, RAG integrado, QuickSight                 |
+| **Algoritmos ML**      | Clustering, Anomaly Detection, Forecasting, Classification           |
+| **Networking**         | Gateway Endpoints vs Interface Endpoints                             |
 | **Conceptos técnicos** | Embeddings, Tokenización, Bases de datos vectoriales, Bedrock Agents |
 
 ---

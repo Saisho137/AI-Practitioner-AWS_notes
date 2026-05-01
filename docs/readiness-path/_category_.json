@@ -1,0 +1,10 @@
+{
+  "label": "📚 Readiness Path",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "title": "Readiness Path — Dominios del Examen",
+    "description": "Notas completas de los 5 dominios del examen oficial AWS Certified AI Practitioner. Cada dominio incluye teoría, diagramas, quiz y resumen.",
+    "slug": "/readiness-path"
+  }
+}

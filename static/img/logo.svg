@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="46" fill="#232F3E"/>
+  <!-- AWS Orange ring -->
+  <circle cx="50" cy="50" r="46" stroke="#FF9900" stroke-width="3" fill="none"/>
+  <!-- Brain/AI icon - simplified neural network -->
+  <!-- Central node -->
+  <circle cx="50" cy="50" r="7" fill="#FF9900"/>
+  <!-- Outer nodes -->
+  <circle cx="26" cy="38" r="5" fill="#FF9900" opacity="0.85"/>
+  <circle cx="74" cy="38" r="5" fill="#FF9900" opacity="0.85"/>
+  <circle cx="26" cy="62" r="5" fill="#FF9900" opacity="0.85"/>
+  <circle cx="74" cy="62" r="5" fill="#FF9900" opacity="0.85"/>
+  <circle cx="50" cy="24" r="5" fill="#FF9900" opacity="0.85"/>
+  <circle cx="50" cy="76" r="5" fill="#FF9900" opacity="0.85"/>
+  <!-- Connections -->
+  <line x1="50" y1="50" x2="26" y2="38" stroke="#FF9900" stroke-width="1.5" opacity="0.6"/>
+  <line x1="50" y1="50" x2="74" y2="38" stroke="#FF9900" stroke-width="1.5" opacity="0.6"/>
+  <line x1="50" y1="50" x2="26" y2="62" stroke="#FF9900" stroke-width="1.5" opacity="0.6"/>
+  <line x1="50" y1="50" x2="74" y2="62" stroke="#FF9900" stroke-width="1.5" opacity="0.6"/>
+  <line x1="50" y1="50" x2="50" y2="24" stroke="#FF9900" stroke-width="1.5" opacity="0.6"/>
+  <line x1="50" y1="50" x2="50" y2="76" stroke="#FF9900" stroke-width="1.5" opacity="0.6"/>
+  <!-- Cross connections -->
+  <line x1="26" y1="38" x2="50" y2="24" stroke="#FF9900" stroke-width="1" opacity="0.35"/>
+  <line x1="74" y1="38" x2="50" y2="24" stroke="#FF9900" stroke-width="1" opacity="0.35"/>
+  <line x1="26" y1="62" x2="50" y2="76" stroke="#FF9900" stroke-width="1" opacity="0.35"/>
+  <line x1="74" y1="62" x2="50" y2="76" stroke="#FF9900" stroke-width="1" opacity="0.35"/>
+  <line x1="26" y1="38" x2="26" y2="62" stroke="#FF9900" stroke-width="1" opacity="0.35"/>
+  <line x1="74" y1="38" x2="74" y2="62" stroke="#FF9900" stroke-width="1" opacity="0.35"/>
+</svg>
