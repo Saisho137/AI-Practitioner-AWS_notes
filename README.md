@@ -8,7 +8,7 @@ Notas personales de estudio para la certificación **AWS Certified AI Practition
 
 ## 🗂️ Estructura del Repositorio
 
-```
+```text
 docs/                        # Contenido del sitio (Docusaurus)
 ├── intro.md                 # Índice general + tabla de PDFs
 ├── readiness-path/          # 5 dominios del examen oficial
@@ -38,13 +38,13 @@ src/pages/index.js           # Home page
 
 ## 📋 Dominios del Examen
 
-| Dominio | Tema | Peso |
-| ------- | ---- | ---- |
-| 1 | Fundamentos de IA y ML | 20% |
-| 2 | Fundamentos de IA Generativa | 24% |
-| 3 | Aplicaciones de Foundation Models | 28% |
-| 4 | Directrices para la IA Responsable | 14% |
-| 5 | Seguridad, Cumplimiento y Gobernanza | 14% |
+| Dominio | Tema                                 | Peso |
+| ------- | ------------------------------------ | ---- |
+| 1       | Fundamentos de IA y ML               | 20%  |
+| 2       | Fundamentos de IA Generativa         | 24%  |
+| 3       | Aplicaciones de Foundation Models    | 28%  |
+| 4       | Directrices para la IA Responsable   | 14%  |
+| 5       | Seguridad, Cumplimiento y Gobernanza | 14%  |
 
 ---
 
