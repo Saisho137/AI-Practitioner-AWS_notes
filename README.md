@@ -1,112 +1,64 @@
-# AWS AI Practitioner - Notas de Estudio
+# AWS AI Practitioner — Notas de Estudio
 
-Este repositorio contiene mis notas personales de estudio para la certificación **AWS AI Practitioner**, organizado en tres secciones principales:
+> 🌐 **Sitio web**: [https://saisho137.github.io/AI-Practitioner-AWS_notes/](https://saisho137.github.io/AI-Practitioner-AWS_notes/)
 
-1. **[Readiness Path](#-readiness-path)**: Notas completas de los 5 dominios del examen oficial
-2. **[SkillBuilder](#-skillbuilder)**: Temas específicos y profundización en conceptos clave
-3. **[Extra](#-extra)**: Notas adicionales sobre servicios AWS, algoritmos y métricas
-
-![Estructura de dominios de la certificación AWS AI Practitioner](image.png)
+Notas personales de estudio para la certificación **AWS Certified AI Practitioner**, publicadas como sitio Docusaurus con los 5 dominios del examen, técnicas de prompt engineering y notas adicionales de ML.
 
 ---
 
-## 📋 Recursos Oficiales
+## 🗂️ Estructura del Repositorio
 
-- **[Guía Oficial del Examen AWS AI Practitioner](PDFs/AWS-Certified-AI-Practitioner_Exam-Guide.pdf)**: Documento oficial de AWS con el contenido y estructura del examen.
+```
+docs/                        # Contenido del sitio (Docusaurus)
+├── intro.md                 # Índice general + tabla de PDFs
+├── readiness-path/          # 5 dominios del examen oficial
+│   ├── dominio-1.md         # Fundamentos de IA y ML (20%)
+│   ├── dominio-2.md         # Fundamentos de IA Generativa (24%)
+│   ├── dominio-3.md         # Aplicaciones de Foundation Models (28%)
+│   ├── dominio-4.md         # IA Responsable (14%)
+│   └── dominio-5.md         # Seguridad y Gobernanza (14%)
+├── skill-builder/
+│   └── prompt-engineering.md
+└── extra/
+    └── notas-adicionales.md
 
----
+static/
+└── PDFs/                    # Material de estudio en PDF
+    ├── AWS-Certified-AI-Practitioner_Exam-Guide.pdf
+    ├── sesion-1-dominio-1.pdf
+    ├── sesion-2-dominio-2.pdf
+    ├── sesion-3-dominio-3.pdf
+    └── sesion-4-dominio-4-y-5.pdf
 
-## 📚 Readiness Path
-
-Material organizado por dominios siguiendo la estructura del examen oficial.
-
-### Estructura del Examen
-
-La certificación AWS AI Practitioner está compuesta por 5 dominios con diferentes pesos:
-
-| Dominio                                                        | Peso |
-| -------------------------------------------------------------- | ---- |
-| **Fundamentos de IA y ML**                                     | 20%  |
-| **Fundamentos de IA Generativa**                               | 24%  |
-| **Aplicaciones de los Foundation Models**                      | 28%  |
-| **Directrices para la IA Responsable**                         | 14%  |
-| **Seguridad, Cumplimiento y Gobernanza para Soluciones de IA** | 14%  |
-
-## 📖 Contenido
-
-### Dominios
-
-#### [Dominio 1: Fundamentos de IA y ML](ReadinessPath/Dominio_1.md) (20%)
-
-1. Explicar conceptos básicos de IA y terminologías
-2. Identificar casos prácticos de uso para IA
-3. Describir el ciclo de vida de desarrollo de ML
-
-**📄 Material complementario**: [Sesión 1 - Dominio 1.pdf](PDFs/Sesión%201%20-%20Dominio%201.pdf)
-
-#### [Dominio 2: Fundamentos de IA Generativa](ReadinessPath/Dominio_2.md) (24%)
-
-1. Conceptos básicos de la IA generativa
-2. Capacidades y limitaciones de la IA generativa para resolver problemas comerciales
-3. Infraestructura y tecnologías de AWS para crear aplicaciones generativas de IA
-
-**📄 Material complementario**: [Sesión 2 - Dominio 2.pdf](PDFs/Sesión%202%20-%20Dominio%202.pdf)
-
-#### [Dominio 3: Aplicaciones de Foundation Models](ReadinessPath/Dominio_3.md) (28%)
-
-1. Consideraciones de diseño para aplicaciones que utilizan Foundation Models
-2. Técnicas efectivas de ingeniería de prompts
-3. Proceso de entrenamiento y afinamiento de Foundation Models
-4. Métodos para evaluar el desempeño de Foundation Models
-
-**📄 Material complementario**: [Sesión 3 - Dominio 3.pdf](PDFs/Sesión%203%20-%20Dominio%203.pdf)
-
-#### [Dominio 4: Directrices para la IA Responsable](ReadinessPath/Dominio_4.md) (14%)
-
-1. Desarrollo de Sistemas de IA Responsable
-2. Importancia de los modelos transparentes y explicables
-
-**📄 Material complementario**: [Sesión 4 - Dominios 4 & 5.pdf](PDFs/Sesión%204%20-%20Dominio%204%20&%205.pdf)
-
-#### [Dominio 5: Seguridad, Cumplimiento y Gobernanza para Soluciones de IA](ReadinessPath/Dominio_5.md) (14%)
-
-1. Métodos para proteger los sistemas de IA
-2. Regulaciones de gobernanza y cumplimiento para los sistemas de IA
-
-**📄 Material complementario**: [Sesión 4 - Dominios 4 & 5.pdf](PDFs/Sesión%204%20-%20Dominio%204%20&%205.pdf)
+src/pages/index.js           # Home page
+.github/workflows/deploy.yml # CI/CD → GitHub Pages
+```
 
 ---
 
-## 🎯 SkillBuilder
+## 📋 Dominios del Examen
 
-Notas profundas sobre temas específicos de AWS SkillBuilder y recursos adicionales.
-
-**[Ver contenido de SkillBuilder →](SkillBuilder/README.md)**
-
----
-
-## 📦 Extra
-
-Notas complementarias sobre temas no cubiertos en los dominios principales.
-
-**[Ver Notas Adicionales →](Extra/Notas_Adicionales.md)**
-
-| Tema                   | Contenido                                                            |
-| ---------------------- | -------------------------------------------------------------------- |
-| **SageMaker**          | Data Wrangler, Pipelines, Model Cards, Model Registry                |
-| **Métricas ML**        | MAE, MAPE, RMSE, Precision, Recall, AUC-ROC                          |
-| **Amazon Q Business**  | Capacidades empresariales, RAG integrado, QuickSight                 |
-| **Algoritmos ML**      | Clustering, Anomaly Detection, Forecasting, Classification           |
-| **Networking**         | Gateway Endpoints vs Interface Endpoints                             |
-| **Conceptos técnicos** | Embeddings, Tokenización, Bases de datos vectoriales, Bedrock Agents |
+| Dominio | Tema | Peso |
+| ------- | ---- | ---- |
+| 1 | Fundamentos de IA y ML | 20% |
+| 2 | Fundamentos de IA Generativa | 24% |
+| 3 | Aplicaciones de Foundation Models | 28% |
+| 4 | Directrices para la IA Responsable | 14% |
+| 5 | Seguridad, Cumplimiento y Gobernanza | 14% |
 
 ---
 
-## 📝 Notas
+## 🚀 Desarrollo Local
 
-Este material está en constante actualización conforme avanzo en mi preparación para la certificación.
+```bash
+npm install
+npm start        # http://localhost:3000/AI-Practitioner-AWS_notes/
+npm run build    # genera build/
+```
+
+El sitio se despliega automáticamente a GitHub Pages en cada push a `main` mediante el workflow de GitHub Actions.
 
 ---
 
 **Autor**: Santiago Betancur  
-**Última actualización**: 8 de Diciembre, 2025
+**Última actualización**: Abril 2026
